@@ -23,4 +23,4 @@ RUN python manage.py collectstatic --noinput || true
 
 EXPOSE 8080
 
-CMD ["gunicorn", "demo.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2"]
+CMD ["gunicorn", "demo.wsgi:application", "--bind", "0.0.0.0:8080", "--workers", "2"]
